@@ -14,21 +14,11 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route exact path="/">
-          <Search />
-        </Route>
-        <Route  path="/extracted">
-          <MisedeCote />
-        </Route>
-        <Route  path="/add">
-          <AddBottle />
-        </Route>
-        <Route  path="/degustations">
-          <Degustations />
-        </Route>
-        <Route  path="/metrics">
-          <Metrics />
-        </Route>
+        <Route exact path="/" element={<Search />} />
+        <Route  path="extracted" element={<MisedeCote />} />
+        <Route  path="add" element={<AddBottle />} />
+        <Route  path="degustations" element={<Degustations />} />
+        <Route  path="metrics" element={<Metrics />} />
       </Routes>
       <BottomNavbar/>
     </BrowserRouter>

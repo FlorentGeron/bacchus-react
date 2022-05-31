@@ -1,6 +1,6 @@
 
 export default function Search() {
   return (
-    <p>Ici, la page de search</p>
+    <div>Ici, la page de search</div>
   )
 }
