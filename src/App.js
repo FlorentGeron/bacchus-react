@@ -1,24 +1,24 @@
 import logo from './logo.svg';
-import './App.css';
+import './Css/App.css';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import BottomNavbar from './components/BottomNavbar.js';
+import Navbar from './components/Navbar.js';
+import Search from  './components/Search.js';
+import AddBottle from './components/AddBottle.js';
 
 function App() {
   return (
+    <BrowserRouter>
+      <Navbar />
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route exact path="/">
+          <Search />
+        </Route>
+      </Switch>
+      <BottomNavbar/>
     </div>
+    </BrowserRouter>
   );
 }
 
