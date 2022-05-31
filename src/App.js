@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './Css/App.css';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import BottomNavbar from './components/BottomNavbar.js';
 import Navbar from './components/Navbar.js';
 import Search from  './components/Search.js';
@@ -13,8 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-    <div className="App">
-      <Switch>
+      <Routes>
         <Route exact path="/">
           <Search />
         </Route>
@@ -30,8 +29,7 @@ function App() {
         <Route  path="/metrics">
           <Metrics />
         </Route>
-      </Switch>
-      </div>
+      </Routes>
       <BottomNavbar/>
     </BrowserRouter>
   );
