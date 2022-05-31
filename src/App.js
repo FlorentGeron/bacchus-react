@@ -8,6 +8,7 @@ import AddBottle from './components/AddBottle.js';
 import Degustations from './components/Degustations.js';
 import Metrics from './components/Metrics.js';
 import MisedeCote from './components/MisedeCote.js';
+import Settings from './components/Settings.js';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route  path="add" element={<AddBottle />} />
         <Route  path="degustations" element={<Degustations />} />
         <Route  path="metrics" element={<Metrics />} />
+        <Route  path="settings" element={<Settings />} />
       </Routes>
       <BottomNavbar/>
     </BrowserRouter>

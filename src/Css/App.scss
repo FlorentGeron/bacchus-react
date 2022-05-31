@@ -4,9 +4,15 @@
 
 // components SCSS
 @import "bottom_navbar.scss";
+@import "navbar.scss";
 
 .App {
   text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: $bacchus-dark;
 }
 
 .App-logo {

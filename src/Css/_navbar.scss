@@ -1,0 +1,21 @@
+.navbar-lewagon {
+  justify-content: space-between;
+  background: $bacchus-primary;
+  color: $bacchus-background;
+  font-family: $logo-font;
+}
+
+
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+.logo {
+  font-size: 3em;
+  font-family: $logo-font;
+}
