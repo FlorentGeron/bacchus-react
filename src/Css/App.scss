@@ -1,3 +1,9 @@
+@import "config/fonts";
+@import "config/colors";
+
+// components SCSS
+@import "bottom_navbar.scss";
+
 .App {
   text-align: center;
 }
